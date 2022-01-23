@@ -79,7 +79,7 @@ def connect(passwd):
                     ssh.connect(ip, port, user, passwd)
                     found_passwd = True
                     print ("\n\n[+] Found Password is ==> " + passwd + " <== [+]\n")
-                    time.sleep(.01)
+                    time.sleep(.05)
                     bruteStop = time.time() - bruteStart
                     conv = int(bruteStop-10)
                     hours = str(conv // 3600)
